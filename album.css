@@ -1,0 +1,101 @@
+/* fonts */
+@font-face{
+    font-family: notcaslon;
+    src: url("font/notcaslon.ttf");
+}
+
+@font-face{
+    font-family: basic;
+    src: url("font/basictitlefont.ttf");
+}
+/* - - - - */ 
+
+h1 {
+    font-family: "notcaslon", "sans-serif";
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+
+div, p, span, a {
+    font-family: "basic", "sans-serif";
+}
+
+body {
+    background: linear-gradient(to bottom, black, white);
+}
+
+.cover {
+    width: 1300px;
+    height: 1000px;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 10%;
+    position: relative;
+}
+
+.cover:after {
+    content: "";
+    background: url("https://shreyajain48.files.wordpress.com/2015/07/memories.jpg");
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius:10%;
+}
+
+.input-box {
+    width: 800px;
+    height: 50px;
+    background-color: white;
+    margin: 10px auto;
+    border: solid 2px black;
+    border-radius: 10%;
+}
+
+label, input, button {
+    margin: 15px 10px;
+}
+
+input {
+    width: 440px;
+    height: 20px;
+    border: solid 1px black;
+}
+
+button {
+    width: 90px;
+    height: 20px;
+    color: white;
+    background-color: gray;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border: 8px double lightyellow;
+    color: yellow;
+}
+
+footer {
+    text-align: right;
+}
+
+@keyframes Rotating {
+    25% {transform: rotateY(90deg);}
+    50% {transform: rotateY(180deg);}
+    75% {transform: rotateY(270deg);}
+    100% {transform: rotateY(360deg);}
+}
+
+img:hover {
+    animation-name: Rotating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
